@@ -1,0 +1,557 @@
+/* =========================================
+   RESPONSIVE HOME PAGE
+   ========================================= */
+
+
+/* =========================================
+   DESKTOP
+   Default styles work for desktop
+   ========================================= */
+
+
+/* =========================================
+   TABLET RESPONSIVE
+   992px and below
+   ========================================= */
+
+@media (max-width: 992px) {
+
+    /* Header */
+    .header {
+        padding: 0 5%;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 70px 5%;
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero h2 {
+        font-size: 1.4rem;
+    }
+
+    /* Profile */
+    .profile-circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .profile-placeholder {
+        width: 240px;
+        height: 240px;
+        font-size: 4rem;
+    }
+
+    /* Statistics */
+    .stats {
+        padding: 50px 5%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Expertise */
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Sections */
+    .section {
+        padding: 70px 5%;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   768px and below
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    .header {
+        height: 70px;
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+
+    /* =========================
+       MOBILE MENU BUTTON
+       ========================= */
+
+    .menu-btn {
+        display: block;
+    }
+
+
+    /* =========================
+       NAVIGATION
+       ========================= */
+
+    .navbar {
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: var(--bg);
+
+        border-bottom: 1px solid var(--border);
+
+        display: none;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        padding: 10px 0;
+
+        box-shadow: var(--shadow);
+
+    }
+
+
+    /* JavaScript adds this class */
+
+    .navbar.show {
+        display: flex;
+    }
+
+
+    .navbar a {
+
+        width: 100%;
+
+        padding: 15px 7%;
+
+        font-size: 1rem;
+
+    }
+
+
+    .navbar a:hover {
+        background: var(--bg-secondary);
+    }
+
+
+    .navbar a.active::after {
+        display: none;
+    }
+
+
+    /* =========================
+       HERO
+       ========================= */
+
+    .hero {
+
+        min-height: auto;
+
+        padding: 70px 5%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 50px;
+
+    }
+
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+
+    .hero h1 {
+
+        font-size: 3.5rem;
+
+        line-height: 1.2;
+
+    }
+
+
+    .hero h2 {
+
+        font-size: 1.3rem;
+
+        margin-bottom: 15px;
+
+    }
+
+
+    .hero p:not(.subtitle) {
+
+        font-size: 0.95rem;
+
+    }
+
+
+    /* =========================
+       HERO BUTTONS
+       ========================= */
+
+    .hero-buttons {
+
+        display: flex;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+
+    }
+
+
+    /* =========================
+       SOCIAL LINKS
+       ========================= */
+
+    .social-links {
+        justify-content: center;
+    }
+
+
+    /* =========================
+       PROFILE IMAGE
+       ========================= */
+
+    .hero-image {
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+    }
+
+
+    .profile-circle {
+
+        width: 280px;
+
+        height: 280px;
+
+    }
+
+
+    .profile-placeholder {
+
+        width: 220px;
+
+        height: 220px;
+
+        font-size: 4rem;
+
+    }
+
+
+    /* =========================
+       STATISTICS
+       ========================= */
+
+    .stats {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+
+        padding: 50px 5%;
+
+    }
+
+
+    .stat-card {
+
+        padding: 20px 10px;
+
+    }
+
+
+    .stat-card h3 {
+
+        font-size: 2rem;
+
+    }
+
+
+    .stat-card p {
+
+        font-size: 0.9rem;
+
+    }
+
+
+    /* =========================
+       EXPERTISE CARDS
+       ========================= */
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .card {
+
+        text-align: center;
+
+        padding: 30px 20px;
+
+    }
+
+
+    /* =========================
+       SECTION
+       ========================= */
+
+    .section {
+
+        padding: 60px 5%;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 2rem;
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   480px and below
+   ========================================= */
+
+@media (max-width: 480px) {
+
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    .header {
+
+        padding: 0 4%;
+
+    }
+
+
+    .logo {
+
+        font-size: 1.2rem;
+
+    }
+
+
+    /* =========================
+       HERO
+       ========================= */
+
+    .hero {
+
+        padding: 55px 5%;
+
+        gap: 40px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 2.7rem;
+
+    }
+
+
+    .hero h2 {
+
+        font-size: 1.1rem;
+
+    }
+
+
+    .hero p:not(.subtitle) {
+
+        font-size: 0.9rem;
+
+    }
+
+
+    /* =========================
+       BUTTONS
+       ========================= */
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        width: 100%;
+
+    }
+
+
+    .hero-buttons .btn {
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+
+    /* =========================
+       PROFILE
+       ========================= */
+
+    .profile-circle {
+
+        width: 230px;
+
+        height: 230px;
+
+    }
+
+
+    .profile-placeholder {
+
+        width: 180px;
+
+        height: 180px;
+
+        font-size: 3rem;
+
+    }
+
+
+    /* =========================
+       STATISTICS
+       ========================= */
+
+    .stats {
+
+        grid-template-columns: 1fr;
+
+        gap: 5px;
+
+        padding: 40px 5%;
+
+    }
+
+
+    .stat-card {
+
+        padding: 15px;
+
+    }
+
+
+    .stat-card h3 {
+
+        font-size: 2rem;
+
+    }
+
+
+    /* =========================
+       CARDS
+       ========================= */
+
+    .card {
+
+        padding: 25px 20px;
+
+    }
+
+
+    /* =========================
+       SECTION
+       ========================= */
+
+    .section {
+
+        padding: 50px 5%;
+
+    }
+
+
+    .section-heading {
+
+        margin-bottom: 30px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 1.8rem;
+
+    }
+
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    .footer {
+
+        padding: 20px 5%;
+
+        font-size: 0.85rem;
+
+    }
+
+
+    /* =========================
+       BACK TO TOP
+       ========================= */
+
+    #back-to-top {
+
+        right: 15px;
+
+        bottom: 15px;
+
+        width: 40px;
+
+        height: 40px;
+
+    }
+
+}
+
+
+/* ===== Upgrade: responsive additions ===== */
+.hero h1{font-size:clamp(2.4rem,5vw,4.2rem)}
+@media (max-width:992px){.steps{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:3.2rem}}
+@media (max-width:768px){.steps{grid-template-columns:1fr}.fb1{left:0}.fb2{right:0}
+.footer{justify-content:center;text-align:center}.hero h1{font-size:2.5rem}.about-image::before{display:none}.about-photo{width:100%;max-width:320px}}
+
+/* DYNAMIC FOOTER */
+@media (max-width:900px){.sf-main{grid-template-columns:1fr 1fr;gap:36px}}
+@media (max-width:560px){.sf-main{grid-template-columns:1fr;padding:44px 5% 24px}.sf-bottom{flex-direction:column;text-align:center;padding:20px 5%}}
